@@ -1,0 +1,15 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Build the app and create an IPA file"
+  lane :build_ipa do
+    gym(
+      project: "Bus66.xcodeproj",       
+      scheme: "Bus66",               
+      configuration: "Release",              
+      output_directory: "./build",          
+      output_name: "Bus66.ipa",            
+      export_method: "development"                
+    )
+  end
+end
