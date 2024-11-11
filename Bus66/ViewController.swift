@@ -89,7 +89,7 @@ class ViewController: UIViewController {
         // 텍스트가 화면 바깥에서 시작하도록 설정
         scrollingLabel.frame.origin.x = screenWidth
 
-        UIView.animate(withDuration: 4.0, delay: 0, options: [.curveLinear, .repeat], animations: {
+        UIView.animate(withDuration: 5.0, delay: 0, options: [.curveLinear, .repeat], animations: {
             self.scrollingLabel.frame.origin.x = -self.scrollingLabel.frame.width
         }) { _ in
             // 애니메이션이 완료되면 시작 위치로 되돌림
